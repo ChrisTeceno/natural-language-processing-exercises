@@ -4,7 +4,7 @@ import pandas as pd
 import re
 import os
 
-git st
+
 def get_first_page_post_links():
     response = requests.get(
         "https://codeup.com/blog/", headers={"user-agent": "Codeup DS"}
