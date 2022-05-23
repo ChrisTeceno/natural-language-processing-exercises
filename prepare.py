@@ -76,3 +76,13 @@ def remove_stopwords(
         filtered_words = [word for word in words if word not in stop_words]
         string_without_stopwords = " ".join(filtered_words)
         return string_without_stopwords
+
+
+def more_clean(text):
+    """
+    More cleaning of text
+    """
+    text = basic_clean(text)
+    text = lemmatize(text)
+    text = remove_stopwords(text)
+    return text
